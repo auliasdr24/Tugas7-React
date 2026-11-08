@@ -50,6 +50,14 @@ function App() {
     setTasks(tasks.filter((task) => task.id !== id));
   }
 
+  function editTugas(id: number, judulBaru: string) {
+    setTasks(
+      tasks.map((task) =>
+        task.id === id ? { ...task, judul: judulBaru } : task
+      )
+    );
+  }
+
   const jumlahSelesai = tasks.filter(
     (task) => task.selesai
   ).length;
@@ -89,6 +97,7 @@ function App() {
         tasks={tugasDitampilkan}
         onToggle={ubahStatus}
         onDelete={hapusTugas}
+        onEdit={editTugas}
       />
 
       <Footer />

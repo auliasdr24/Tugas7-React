@@ -10,9 +10,10 @@ type TaskListProps = {
   tasks: Task[];
   onToggle: (id: number) => void;
   onDelete: (id: number) => void;
+  onEdit: (id: number, judulBaru: string) => void;
 };
 
-function TaskList({ tasks, onToggle, onDelete }: TaskListProps) {
+function TaskList({ tasks, onToggle, onDelete, onEdit }: TaskListProps) {
   return (
     <div>
       {tasks.length === 0 ? (
@@ -25,6 +26,7 @@ function TaskList({ tasks, onToggle, onDelete }: TaskListProps) {
             selesai={task.selesai}
             onToggle={() => onToggle(task.id)}
             onDelete={() => onDelete(task.id)}
+            onEdit={(judulBaru) => onEdit(task.id, judulBaru)}
           />
         ))
       )}
