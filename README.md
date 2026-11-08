@@ -1,32 +1,50 @@
-# React + TypeScript + Vite
+# Daftar Tugas Kuliah
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Aplikasi sederhana untuk membantu mahasiswa mengelola tugas kuliah menggunakan React dan TypeScript.
 
-Currently, two official plugins are available:
+## Identitas Mahasiswa
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Nama: Aulia Safarina Dwi Rahayu
+- NIM: 1247050012
+- Program Studi: Teknik Informatika
+- Mata Kuliah: Pengembangan Aplikasi Web (PAW)
 
-## React Compiler
+## Teknologi
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- TypeScript
+- Vite
+- CSS
 
-## Expanding the Oxlint configuration
+## Fitur Aplikasi
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- Menambahkan tugas kuliah.
+- Menghapus tugas.
+- Mengubah status tugas.
+- Mencari tugas berdasarkan judul.
+- Memfilter tugas berdasarkan status.
+- Menampilkan jumlah total tugas, tugas selesai, dan belum selesai.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+## Komponen React
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+1. Header
+2. TaskCounter
+3. TaskForm
+4. TaskItem
+5. TaskList
+6. TaskFilter
+7. Footer
+
+## Menjalankan Aplikasi
+
+Install dependencies:
+
+npm install
+
+Jalankan development server:
+
+npm run dev
+
+Build aplikasi:
+
+npm run build
