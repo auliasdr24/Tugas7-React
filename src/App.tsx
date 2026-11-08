@@ -58,6 +58,10 @@ function App() {
     );
   }
 
+  function hapusTugasSelesai() {
+    setTasks(tasks.filter((task) => !task.selesai));
+  }
+
   const jumlahSelesai = tasks.filter(
     (task) => task.selesai
   ).length;
@@ -83,6 +87,12 @@ function App() {
         total={tasks.length}
         selesai={jumlahSelesai}
       />
+
+      {jumlahSelesai > 0 && (
+        <button onClick={hapusTugasSelesai}>
+          Hapus Semua Tugas Selesai
+        </button>
+      )}
 
       <TaskForm onAdd={tambahTugas} />
 
