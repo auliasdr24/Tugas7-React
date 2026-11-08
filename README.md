@@ -49,6 +49,29 @@ Aplikasi sederhana untuk membantu mahasiswa mengelola tugas kuliah menggunakan R
 - **List Rendering:** Menampilkan daftar tugas menggunakan `map()` dan `key`.
 - **useEffect:** Menyimpan perubahan daftar tugas ke LocalStorage.
 
+## Penjelasan Penerapan Konsep React
+
+### 1. Components
+Aplikasi dibagi menjadi beberapa komponen, seperti Header, TaskForm, TaskList, dan Footer. Setiap komponen memiliki fungsi masing-masing sehingga kode lebih terstruktur dan mudah dikelola.
+
+### 2. Props
+Props digunakan untuk mengirimkan data dan fungsi dari komponen induk ke komponen anak. Contohnya, TaskCounter menerima data jumlah tugas melalui props `total` dan `selesai`. TaskList juga menerima daftar tugas serta fungsi untuk mengedit, menghapus, dan mengubah status tugas.
+
+### 3. State
+`useState` digunakan untuk mengelola data yang dapat berubah, seperti daftar tugas, kata pencarian, pilihan filter, dan mode edit. Ketika state berubah, tampilan aplikasi akan diperbarui secara otomatis.
+
+### 4. Event Handling
+Event handling diterapkan pada tombol dan form untuk menangani interaksi pengguna. Contohnya adalah menambahkan tugas, menyimpan hasil edit, menghapus tugas, mengubah status tugas, serta melakukan pencarian dan filter.
+
+### 5. Conditional Rendering
+Conditional rendering digunakan untuk menampilkan elemen berdasarkan kondisi tertentu. Contohnya, pesan "Belum ada tugas" muncul ketika daftar tugas kosong. Tombol "Hapus Semua Tugas Selesai" hanya muncul ketika terdapat tugas yang sudah selesai.
+
+### 6. List Rendering
+List rendering menggunakan fungsi `map()` untuk menampilkan data tugas ke dalam daftar. Setiap tugas memiliki `key` berupa ID unik agar React dapat mengenali setiap item.
+
+### 7. useEffect dan LocalStorage
+`useEffect` digunakan untuk menyimpan perubahan data tugas ke LocalStorage. Dengan demikian, daftar tugas tetap tersimpan meskipun halaman aplikasi dimuat ulang.
+
 ## Menjalankan Aplikasi
 
 Install dependencies:
