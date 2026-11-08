@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./style.css";
 
 import Footer from "./components/Footer";
@@ -15,9 +15,16 @@ type Task = {
 };
 
 function App() {
-  const [tasks, setTasks] = useState<Task[]>([]);
+  const [tasks, setTasks] = useState<Task[]>(() => {
+    const savedTasks = localStorage.getItem("daftar-tugas");
+    return savedTasks ? JSON.parse(savedTasks) : [];
+  });
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState("semua");
+
+  useEffect(() => {
+    localStorage.setItem("daftar-tugas", JSON.stringify(tasks));
+  }, [tasks]);
 
   function tambahTugas(judul: string) {
     const tugasBaru: Task = {
