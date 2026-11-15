@@ -91,3 +91,22 @@ Build aplikasi:
 ```bash
 npm run build
 ```
+
+## Informasi Aplikasi
+
+**Nama Aplikasi:** STUDYUTOPIA
+
+**Deskripsi:** Aplikasi manajemen tugas kuliah yang membantu mahasiswa mengatur tugas, jadwal kuliah, kalender akademik, pengingat, dan catatan dalam satu dashboard.
+
+## Tampilan Aplikasi
+
+Screenshot aplikasi dapat dilihat pada folder `screenshots/`.
+
+## Link Publikasi
+
+- **Website:** https://pawdungeon.freehosting.dev/tugas7/
+- **GitHub:** https://github.com/auliasdr24/Tugas7-React
+
+## Responsivitas
+
+Aplikasi dirancang dengan tampilan dashboard yang responsif agar dapat digunakan melalui berbagai ukuran layar perangkat.
