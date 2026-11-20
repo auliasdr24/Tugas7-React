@@ -100,7 +100,7 @@ npm run build
 
 ## Tampilan Aplikasi
 
-Screenshot aplikasi dapat dilihat pada folder `screenshots/`.
+Screenshot aplikasi dapat dilihat pada folder `bukti-screenshot/`.
 
 ## Link Publikasi
 
